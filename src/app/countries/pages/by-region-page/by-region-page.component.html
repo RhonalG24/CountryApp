@@ -1,0 +1,23 @@
+<h2>Por Región</h2>
+<hr>
+<div class="row">
+  <div class="col">
+    <!-- SearchBox -->
+     <shared-search-box
+     (onValue)="searchByRegion($event)"
+     placeholder="Buscar por región"></shared-search-box>
+    <!-- <input type="text" placeholder="Buscar por capital" class="form-control"> -->
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <hr>
+    <countries-table [countries]="countries"></countries-table>
+    <!-- <ul>
+       @for (country of countries; track $index) {
+        <li>{{country.capital}} - {{country.population}}</li>
+       }
+    </ul> -->
+
+  </div>
+</div>
